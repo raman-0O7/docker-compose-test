@@ -7,3 +7,6 @@
   - Start the image (docker run --network docker-compost-test -e DATABASE_URL=postgresql://postgres:post1234@postgres:5432/postgres -p 3000:3000 docker-compose-test)
 
 
+## Docker compose
+ - Install docker and docker-compose
+ - Start compose (docker-compose up)

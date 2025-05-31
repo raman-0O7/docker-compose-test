@@ -10,10 +10,7 @@ RUN pnpm install
 
 COPY . .
 
-ENV DATABASE_URL=postgresql://postgres:post1234@localhost:5432/postgres 
-
-RUN pnpm prisma migrate dev
 RUN pnpm prisma generate
 RUN pnpm build
 
-CMD [ "pnpm", "start" ]
+CMD [ "pnpm", "dev:docker" ]
